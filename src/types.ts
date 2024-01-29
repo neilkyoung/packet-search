@@ -13,3 +13,19 @@ export interface IFruit {
 		value: string
 	}[]
 }
+
+export interface Packet {
+	title: string
+	description: string
+	packet_img: string
+	country_id: number
+	country_code: string
+	packet_id: number
+	collection_id: number
+}
+
+export interface User {
+	name: string
+	id: number
+	email: string
+}

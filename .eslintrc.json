@@ -23,6 +23,10 @@
 		"prettier"
 	],
 	"rules": {
+		"@typescript-eslint/no-misused-promises": "off",
+		"@typescript-eslint/no-floating-promises": "off",
+		"jsx-a11y/label-has-associated-control": "off",
+
 		"no-dupe-else-if": "error",
 		"no-promise-executor-return": "error",
 		"no-unreachable-loop": "error",
