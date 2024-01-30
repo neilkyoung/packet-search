@@ -14,6 +14,21 @@ export interface IFruit {
 	}[]
 }
 
+export interface Publisher {
+	publisher_id: number
+	logo_img: string
+	name: string
+	description: string
+}
+
+export interface Collection {
+	collection_id: number
+	publisher_id: number
+	collection_img: string
+	name: string
+	description: string
+}
+
 export interface Packet {
 	title: string
 	description: string

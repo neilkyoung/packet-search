@@ -9,10 +9,10 @@ function addClassNames(...classes: string[]): string {
 
 export default function Navigation(): ReactElement {
 	const navigation = [
-		{ name: 'Dashboard', href: '/', current: true },
-		{ name: 'Team', href: '/', current: false },
-		{ name: 'Projects', href: '/', current: false },
-		{ name: 'Calendar', href: '/', current: false }
+		{ name: 'Home', href: '/', current: true },
+		{ name: 'Packets', href: '/collection', current: false },
+		{ name: 'Collections', href: '/collections', current: false },
+		{ name: 'Publishers', href: '/publishers', current: false }
 	]
 
 	return (
