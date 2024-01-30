@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query'
-import getPackets from 'api/getPackets'
+import { getPackets } from 'api/getPackets'
 import Head from 'components/Head'
 import Packet from 'components/Packet'
 import type { Packet as PacketType } from 'types'

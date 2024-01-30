@@ -2,6 +2,7 @@ import type { ReactElement } from 'react'
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom'
 
 function addClassNames(...classes: string[]): string {
 	return classes.filter(Boolean).join(' ')
@@ -34,11 +35,13 @@ export default function Navigation(): ReactElement {
 							</div>
 							<div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
 								<div className='flex flex-shrink-0 items-center'>
-									<img
-										className='h-8 w-auto'
-										src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500'
-										alt='Your Company'
-									/>
+									<Link data-testid='BackLink' to='/'>
+										<img
+											className='h-8 w-auto'
+											src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500'
+											alt='Your Company'
+										/>
+									</Link>
 								</div>
 								<div className='hidden sm:ml-6 sm:block'>
 									<div className='flex space-x-4'>

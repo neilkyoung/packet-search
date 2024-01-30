@@ -20,7 +20,7 @@ export default function Packet({ packet, index }: Properties): ReactElement {
 	const navigate = useNavigate()
 	function onClick(): void {
 		window.scrollTo(0, 0)
-		navigate(`/packet/${packet.packet_id}`)
+		navigate(`/packets/${packet.packet_id}`)
 	}
 
 	function onKeyDown(event: KeyboardEvent): void {

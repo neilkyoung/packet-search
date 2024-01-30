@@ -1,6 +1,6 @@
 import type { Packet } from 'types'
 
-export default async function getPackets(
+export async function getPackets(
 	collectionId: string | null
 ): Promise<Packet[]> {
 	const apiUrl = collectionId
@@ -11,3 +11,13 @@ export default async function getPackets(
 
 	return response.json() as Promise<Packet[]>
 }
+
+export async function getPacket(packetId: string | null): Promise<Packet[]> {
+	const response = await fetch(
+		`http://localhost:3001/packet-finder/packets?packet_id_eq=${packetId}`
+	)
+
+	return response.json() as Promise<Packet[]>
+}
+
+export default { getPackets, getPacket }
