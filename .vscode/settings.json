@@ -28,5 +28,13 @@
 	"javascript.format.enable": false,
 	"stylelint.validate": ["css"],
 	"typescript.disableAutomaticTypeAcquisition": true,
-	"typescript.tsdk": "node_modules/typescript/lib"
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+		  "source": "PowerShell",
+		  "icon": "terminal-powershell",
+		  "args": ["-ExecutionPolicy", "Bypass"]
+		}
+	  },
+	  "terminal.integrated.defaultProfile.windows": "PowerShell",
 }
